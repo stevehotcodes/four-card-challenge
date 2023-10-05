@@ -1,0 +1,135 @@
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+*{
+    margin:0;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    background-color:var(--Light-gray) ;
+    display:flex;
+    justify-content: center;
+    align-content:center;
+    overflow:hidden;
+    flex-wrap:wrap;
+    flex-grow:1;
+    
+}
+
+#main-card-wrapper{
+    background-color:var(--Very-Light-Gray);
+    width:70vw;
+    height:90vh;
+    margin:4.5% auto;
+    display: flex;
+    flex-direction:column;
+    
+    flex-wrap:wrap;
+    
+}
+
+#title{
+    margin:2rem auto;
+    text-align: center;
+    padding:10px;
+}
+
+#title>#first-title{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#second-title{
+    font-size: 2rem;
+    font-weight:600;
+}
+
+#third-title,#forth-title{
+    font-weight: 200;
+    font-size: .9rem;
+    
+    color:var(--Grayish-Blue)
+}
+
+#third-title{
+    padding-top:2rem;
+}
+
+.cards{
+    display:flex;
+    flex:1;
+    flex-wrap:wrap;
+    padding:10px;
+    gap:10px;
+    align-items:center;
+    justify-content: center;
+}
+
+#supervisor-card,#karma-card,#team-builder-card,#calculator-card{
+    border-radius:5px;
+    box-shadow: 5px 5px 5px var(--Grayish-Blue);
+    height:200px;
+    align-self:center;
+    padding:4px;
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    border:1.5px solid var(--Grayish-Blue)
+
+}
+#supervisor-card{
+    border-top:2px solid var(--Cyan);
+    flex:.3
+}
+.team-builder-karma-wrapper{
+    flex:.3;
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+}
+#team-builder-card{
+    border-top:2px solid var(--Red)
+}
+#karma-card{
+    border-top:2px solid var(--Orange)
+}
+#calculator-card{
+    flex:.3;
+    border-top:2px solid var(--Blue);
+
+}
+
+ #card-title{
+    font-weight:600;
+    padding:16px;
+}
+
+#card-desc{
+    font-weight: 200;
+    font-size: .9rem;
+    color:var(--Grayish-Blue)
+}
+svg{
+    align-self:flex-end;
+    margin-top:40px;
+
+}
+
+
+
+
