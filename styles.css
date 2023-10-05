@@ -145,6 +145,9 @@ svg{
         flex-wrap:wrap;
         
     }
+    #main-card-wrapper{
+        height:100%
+    }
     
 }
 
