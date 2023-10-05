@@ -20,12 +20,12 @@
 
 body{
     width:100vw;
-    height:100vh;
+    /* height:100vh; */
     background-color:var(--Light-gray) ;
     display:flex;
     justify-content: center;
     align-content:center;
-    overflow:hidden;
+    /* overflow:hidden; */
     flex-wrap:wrap;
     flex-grow:1;
     
@@ -34,12 +34,14 @@ body{
 #main-card-wrapper{
     background-color:var(--Very-Light-Gray);
     width:70vw;
-    height:90vh;
+    /* height:90vh; */
     margin:4.5% auto;
     display: flex;
     flex-direction:column;
+    flex-grow:1;
     
-    flex-wrap:wrap;
+    
+    /* flex-wrap:wrap; */
     
 }
 
@@ -78,6 +80,7 @@ body{
     gap:10px;
     align-items:center;
     justify-content: center;
+    flex-grow:1;
 }
 
 #supervisor-card,#karma-card,#team-builder-card,#calculator-card{
@@ -94,7 +97,7 @@ body{
 }
 #supervisor-card{
     border-top:2px solid var(--Cyan);
-    flex:.3
+    flex:.2;
 }
 .team-builder-karma-wrapper{
     flex:.3;
@@ -103,13 +106,15 @@ body{
     gap:1rem;
 }
 #team-builder-card{
-    border-top:2px solid var(--Red)
+    border-top:2px solid var(--Red);
+   
 }
 #karma-card{
-    border-top:2px solid var(--Orange)
+    border-top:2px solid var(--Orange);
+   
 }
 #calculator-card{
-    flex:.3;
+    flex:.2;
     border-top:2px solid var(--Blue);
 
 }
@@ -128,6 +133,19 @@ svg{
     align-self:flex-end;
     margin-top:40px;
 
+}
+
+@media screen  and (max-width:955px) {
+    .cards,.team-builder-karma-wrapper,#supervisor-card,#karma-card,#team-builder-card,#calculator-card{
+        flex-grow:1;
+        flex-direction:column;
+        
+    }
+    .cards,.team-builder-karma-wrapper{
+        flex-wrap:wrap;
+        
+    }
+    
 }
 
 
